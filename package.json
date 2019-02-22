@@ -1,0 +1,24 @@
+{
+  "name": "public-weather-data-logger-gcloud",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pcman75/public-weather-data-logger-gcloud.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pcman75/public-weather-data-logger-gcloud/issues"
+  },
+  "homepage": "https://github.com/pcman75/public-weather-data-logger-gcloud#readme",
+  "dependencies": {
+    "influx": "^5.0.7",
+    "request": "^2.88.0",
+    "request-promise-native": "^1.0.7"
+  }
+}
