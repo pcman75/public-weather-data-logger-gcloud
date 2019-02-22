@@ -3,5 +3,5 @@ steps:
   args: ['install']
   dir: 'functions'
 - name: 'gcr.io/cloud-builders/gcloud'
-  args: ['functions', 'deploy', 'logOpenWeather', 'HTTP', '--runtime', 'Node.js 6', '--entry-point', 'logOpenWeather']
+  args: ['functions', 'deploy', 'logOpenWeather', 'GET', '--runtime', 'Node.js 6', '--entry-point', 'logOpenWeather']
   dir: 'functions'
