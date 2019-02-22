@@ -1,10 +1,3 @@
-/**
- * Responds to any HTTP request.
- *
- * @param {!express:Request} req HTTP request context.
- * @param {!express:Response} res HTTP response context.
- */
-
 function log2Influx(weather) {
   const Influx = require('influx');
   const influx = new Influx.InfluxDB({
@@ -41,6 +34,12 @@ function log2Influx(weather) {
     })
 }
 
+/**
+ * Responds to any HTTP request.
+ *
+ * @param {!express:Request} req HTTP request context.
+ * @param {!express:Response} res HTTP response context.
+ */
 exports.logOpenWeather = (req, res) => {
   let urlOpenWeatherMap = `http://api.openweathermap.org/data/2.5/weather?id=${process.env.OWM_LOC_ID}&appid=${process.env.OWM_API_KEY}&units=metric`;
   let urlDarkSky = `https://api.darksky.net/forecast/${process.env.DSKY_API_KEY}/${process.env.DSKY_LOC}?units=si&exclude=daily,flags,hourly`;
